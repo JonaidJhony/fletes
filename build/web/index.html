@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>       
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+        <link href="style/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="style/font_awesome/font_awesome_5_15_3/css/all.min.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>  
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Cotizador de fletes</h3>
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <label for="txtx1" class="form-label">Valor de x1:</label>
+                                <input id="txtx1" type="text" class="form-control"/>
+                            </div>
+                            <div class="mt-2">
+                                <label for="txty1" class="form-label">Valor de y1:</label>
+                                <input id="txty1" type="text" class="form-control"/>
+                            </div>
+                            <div class="mt-2">
+                                <label for="txtx2" class="form-label">Valor de x2:</label>
+                                <input id="txtx2" type="text" class="form-control"/>
+                            </div>
+                            <div class="mt-2">
+                                <label for="txty2" class="form-label">Valor de y2:</label>
+                                <input id="txty2" type="text" class="form-control"/>
+                            </div>
+                            <div class="mt-2">
+                                <button class="btn btn-primary" onclick="cotizarFlete()">Cotizar</button>
+                            </div>
+                            <div class="mt-2">
+                                <span id="spnDistancia" class="fw-bold"></span><br>
+                                <span id="spnCostoTotal" class="fw-bold"></span><br>
+                                <span id="spnTipoFlete" class="fw-bold"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="style/sweetalert2/sweetalert2.all.min.css"></script>
+        <script src="style/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="js/evaluarFletes.js"></script>
+    </body>
+</html>
